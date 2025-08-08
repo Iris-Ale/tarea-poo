@@ -6,7 +6,7 @@ package org.utl.ldsm304.vista;
 
 /**
  *
- * @author IRIS
+ * @author IRIS Y NAT
  */
 public class Principal {
 
