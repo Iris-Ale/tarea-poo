@@ -13,51 +13,7 @@ import java.util.Scanner;
 public class Controlador {
 
     //aki metodo ejecutar con menu
-     public void ejecutar() {
-        Scanner leer = new Scanner(System.in);
-
-        
-        //generar arreglo
-        int arreglo [][]= generarArreglo(3, 3);
-        
-        char opcion;
-        do {
-            System.out.println("\n MENU EJERCICIO 1 ---");
-            System.out.println("a) Obtener el número que más se repite");
-            System.out.println("b) Obtener la cantidad de números pares ");
-            System.out.println("c) Obtener la cantidad de números impares");
-            System.out.println("d) Obtener la suma de los numeros en diagonal");
-            System.out.println("e) Obtener la cantidad de números multiplos de ");
-            System.out.println("x) SALIR");
-            System.out.print("Ingresa opcion pls: ");
-            opcion = leer.next().charAt(0);
-
-            switch (opcion) {
-                case 'a':
-                    sacarNumRepetido(arreglo);
-                    break;
-
-                case 'b':
-                    sacarNumerosPares(arreglo);
-                    break;
-
-                case 'c':
-                    sacarNumerosImPares(arreglo);
-                    break;
-                case 'd':
-                    sacarSumaDiagonal(arreglo);
-                    break;
-                case 'e':
-                    cantidadMultiplos5(arreglo);
-                    break;
-                case 'x':
-                    System.out.println("saliendo del ejercicio 1...");
-                    break;
-                default:
-                    System.out.println("opcion no valida.");
-            }
-        } while (opcion != 'x');
-    }
+    
      
      //generar un arreglo de int
      public int[][] generarArreglo(int filas, int columnas) {

@@ -5,46 +5,7 @@ import java.util.Scanner;
 
 
 public class ControladorCadena {
-    public void ejecutar() {
-        Scanner leer = new Scanner(System.in);
-
-        
-        String[][] arreglo = generarArreglo(3, 3);
-
-        char opcion;
-        do {
-            System.out.println("\n MENU EJERCICIO 2 ---");
-            System.out.println("a) Mostrar cadenas que comienzan con o");
-            System.out.println("b) mostrar cadena (las vocales) ");
-            System.out.println("c) Mostrar cadenas que contienen 'sa'");
-            System.out.println("x) SALIRr");
-            System.out.print("Ingresa opcion pls: ");
-            opcion = leer.next().charAt(0);
-
-            switch (opcion) {
-                case 'a':
-                    mostrarCadenasConO(arreglo);
-                    break;
-
-                case 'b':
-                    mostrarCadenaVocales(arreglo);
-                    break;
-
-                case 'c':
-                    mostrarCadenasConSa(arreglo);
-                    break;
-
-                case 'x':
-                    System.out.println("saliendo del ejercicio 2...");
-                    break;
-
-                default:
-                    System.out.println("opcion no valida.");
-            }
-        } while (opcion != 'x');
-    }
-
-    
+   
     //mtodos
 
     public String[][] generarArreglo(int filas, int columnas) {
