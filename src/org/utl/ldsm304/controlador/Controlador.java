@@ -38,7 +38,7 @@ public class Controlador {
          
        for (int i = 0; i < arreglo.length; i++) {
              for (int j = 0; j < arreglo[i].length; j++) {
-                 todos[index++]= j;
+                 todos[index++]= arreglo [i][j];
              }
         }
        
@@ -51,12 +51,13 @@ public class Controlador {
                  if (todos[i] == todos [j]){
                      contador ++;
                  }
-                 if (contador > repeticiones){
+                 
+             }
+             
+             if (contador > repeticiones){
                      repeticiones = contador;
                      repetido = todos[i];
                  }
-                 
-             }
              
              
              

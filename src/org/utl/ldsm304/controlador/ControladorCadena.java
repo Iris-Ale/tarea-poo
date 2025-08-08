@@ -23,6 +23,7 @@ public class ControladorCadena {
 
     public void mostrarCadenasConO(String[][] arreglo) {
         System.out.println("\nCadenas que comienzan con 'o':");
+        
         for (String[] fila : arreglo) {
             for (String palabra : fila) {
                 if (palabra.toLowerCase().startsWith("o")) {

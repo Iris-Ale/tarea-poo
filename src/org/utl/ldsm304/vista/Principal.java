@@ -47,9 +47,9 @@ public class Principal {
                 case '2':
                 {
                     try {
-                        ejecutar();
-                    } catch (Exception ex) {
-                        Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+                        ejecutarEjercicio2();
+                    } catch (Exception e) {
+                         System.out.println(e.getMessage());
                     }
                 }
                     break;
@@ -110,7 +110,7 @@ public class Principal {
         } while (opcion != 'x');
     }
      
-     public static void ejecutar() throws Exception {
+     public static void ejecutarEjercicio2() throws Exception {
         Scanner leer = new Scanner(System.in);
         ControladorCadena cc = new ControladorCadena();
         
